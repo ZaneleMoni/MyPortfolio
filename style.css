@@ -1,0 +1,90 @@
+h1{
+    color:magenta;
+    text-align: center;
+    font-family: serif;
+}
+.display-2{
+  position: absolute;
+  top: 30%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+
+ .display-5{
+  position: absolute;
+  top: 60%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+
+}
+
+
+.netlify{
+    width:30px;
+    height:15px;
+}
+.card{
+    display:flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+.row{
+     display:flex;
+    flex-wrap: wrap;
+    /* margin: 50px; */
+    padding-left: 45px;
+
+}
+.display2{
+    font-family: serif;
+}
+/* skills */
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+    width: 100%; /* Full width */
+    background-color: #ddd; /* Grey background */
+}
+
+/* The animation code */
+@keyframes percentAnimation {
+    from {width: 0;}
+}
+
+/* The element to apply the animation to */
+
+.skills {
+  animation-name: percentAnimation;
+  animation-duration: 4s;
+  text-align: right; /* Right-align text */
+  padding: 10px; /* Add some padding */
+  color: white; /* White text color */
+}
+
+.html { 
+  background-color: #7f1b91;
+  width: 90%;
+}
+
+.css {
+  background-color: #f235d9;
+  width: 80%;
+}
+
+.js {
+  background-color: #3492ef;
+  width: 65%;
+}
+
+.php {
+  background-color: #808080;
+  width: 60%;
+}
+.about{
+    text-align:center;
+    font-family: serif ;
+}
+/* Animation */
+
