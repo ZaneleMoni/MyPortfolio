@@ -334,3 +334,55 @@ body {
   padding: 90px;
 
 }
+/* social links */
+/* Style the Sticky icons on web page */   
+    .stickyicon-list {   
+    /* position: fixed;    */
+    top: 200px;   
+    transform: translateY(-50%);          
+    }         
+    /* .stickyicon-list a {   
+    display: block;   
+    text-align: center;   
+    padding: 8px;   
+    transition: all 0.5s ease;   
+    color: white;   
+    font-size: 20px;   
+    }          */
+    /* HOver affect on sticky social media icons */   
+    .stickyicon-list a:hover {   
+    color: #000;   
+    width:10px;   
+    }   
+       
+    /* Now we have to design each icon of social media */         
+    .facebook {   
+    /* background: #3b5998;    */
+    color: white;
+    margin: 5px;  
+    }         
+    .github {   
+    color: white;   
+    /* background: #00acee;  */
+    margin: 5px;  
+    }   
+    .linkedin {   
+    /* background: #0e76a8;    */
+    color: white; 
+    margin: 5px; 
+    }       
+    .google {   
+    color: white;   
+    /* background: #db4a39;  */
+    margin: 5px;  
+    }   
+    .instagram {   
+    /* background: white;    */
+    color: white; 
+    margin: 5px;  
+    }         
+    .youtube {   
+    /* color: white;    */
+    background:chocolate; 
+    margin: 5px;   
+    }   
