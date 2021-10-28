@@ -79,50 +79,7 @@ p {
 .display2 {
   font-family: serif;
 }
-/* skills */
-/* Make sure that padding behaves as expected */
-/* * {box-sizing:border-box} */
 
-/* Container for skill bars */
-/* .container { */
-/* width: 100%; Full width */
-/* background-color: #ddd; Grey background */
-/* } */
-
-/* The animation code */
-/* @keyframes percentAnimation { */
-/* from {width: 0;} */
-/* } */
-
-/* The element to apply the animation to */
-
-/* .skills {
-  animation-name: percentAnimation;
-  animation-duration: 4s;
-  text-align: right; Right-align text */
-/* padding: 10px; Add some padding */
-/* color: white; /* White text color */
-/* } */
-
-/* .html { 
-  background-color: #7f1b91;
-  width: 90%;
-} */
-
-/* .css {
-  background-color: #f235d9;
-  width: 80%;
-}
-
-.js {
-  background-color: #3492ef;
-  width: 65%;
-}
-
-.php {
-  background-color: #808080;
-  width: 60%;
-}
 
 /*work and experince section*/
 .about {
@@ -143,7 +100,9 @@ body {
   border-radius: 10px;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
-
+#skills{
+  padding: 71px;
+}
 .skills-bar {
   padding: 25px 30px;
 }
@@ -190,13 +149,13 @@ body {
 }
 
 .progress-line .html {
-  width: 80%;
+  width: 100%;
 }
 .progress-line .css {
-  width: 60%;
+  width: 85%;
 }
 .progress-line .bootstrap {
-  width: 50%;
+  width: 70%;
 }
 
 .bar .progress-line span::before {
@@ -229,10 +188,10 @@ body {
   content: "80%";
 }
 .progress-line .css::after {
-  content: "70%";
+  content: "60%";
 }
 .progress-line .bootstrap::after {
-  content: "82%";
+  content: "50%";
 }
 
 /* ////........Media Query........//// */
@@ -250,7 +209,9 @@ body {
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-
+#testimonial{
+  padding: 71px;
+}
 .flip-card {
   background-color: transparent;
   width: 300px;
@@ -491,4 +452,13 @@ body {
   background-position: center center;
   transition: filter 0.5s ease;
   filter: grayscale(100%);
+}
+#projects{
+  padding: 71px;
+}
+#about{
+  padding: 71px;
+}
+#timeline{
+  padding: 71px;
 }
