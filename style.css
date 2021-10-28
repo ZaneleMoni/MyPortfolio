@@ -1,13 +1,14 @@
-/* hero */
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
-  font-family: Arial, Helvetica,serif;
+  font-family: Arial, Helvetica, serif;
   background-color: black;
 }
-
+/* hero */
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pictures/zanele3.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("pictures/zanele3.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -26,62 +27,57 @@ body, html {
   font-family: serif;
 }
 
-
 .hero-text button:hover {
   background-color: #555;
   color: white;
 }
 /* hero end */
 
-
-h1{
-    color:black;
-    text-align: center;
-    font-family: serif;
+h1 {
+  color: black;
+  text-align: center;
+  font-family: serif;
 }
-h3{
+h3 {
   font-style: italic;
   font-size: medium;
 }
-p{
+p {
   font-style: italic;
   font-size: medium;
 }
 
-.display-2{
+.display-2 {
   position: absolute;
   top: 30%;
   left: 70%;
   transform: translate(-50%, -50%);
 }
 
- .display-5{
+.display-5 {
   position: absolute;
   top: 60%;
   left: 70%;
   transform: translate(-50%, -50%);
-
 }
 
-
-.netlify{
-    width:30px;
-    height:15px;
+.netlify {
+  width: 30px;
+  height: 15px;
 }
-.card{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.row{
-     display:flex;
-    flex-wrap: wrap;
-    /* margin: 50px; */
-    padding-left: 45px;
-
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: 50px; */
+  padding-left: 45px;
 }
-.display2{
-    font-family: serif;
+.display2 {
+  font-family: serif;
 }
 /* skills */
 /* Make sure that padding behaves as expected */
@@ -89,13 +85,13 @@ p{
 
 /* Container for skill bars */
 /* .container { */
-    /* width: 100%; Full width */
-    /* background-color: #ddd; Grey background */
+/* width: 100%; Full width */
+/* background-color: #ddd; Grey background */
 /* } */
 
 /* The animation code */
 /* @keyframes percentAnimation { */
-    /* from {width: 0;} */
+/* from {width: 0;} */
 /* } */
 
 /* The element to apply the animation to */
@@ -104,8 +100,8 @@ p{
   animation-name: percentAnimation;
   animation-duration: 4s;
   text-align: right; Right-align text */
-  /* padding: 10px; Add some padding */
-  /* color: white; /* White text color */
+/* padding: 10px; Add some padding */
+/* color: white; /* White text color */
 /* } */
 
 /* .html { 
@@ -127,144 +123,141 @@ p{
   background-color: #808080;
   width: 60%;
 }
-.about{
-    text-align:center;
-    font-family: serif ;
-} */
 
 /*work and experince section*/
+.about {
+  text-align: center;
+  font-family: serif;
+}
 
- 
 /* skills */
 body {
-    background: #25b79f;
+  background: #25b79f;
+}
+.skills {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.skills-bar {
+  padding: 25px 30px;
+}
+
+.skills-bar .bar {
+  margin: 25px 0;
+}
+
+.skills-bar .bar .info span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.skills-bar .bar .info {
+  margin-bottom: 8px;
+  color: #07374a;
+}
+
+.skills-bar .bar .progress-line {
+  position: relative;
+  height: 10px;
+  width: 350px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line span {
+  position: absolute;
+  background: #25b79f;
+  height: 100%;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
   }
+}
+
+.progress-line .html {
+  width: 80%;
+}
+.progress-line .css {
+  width: 60%;
+}
+.progress-line .bootstrap {
+  width: 50%;
+}
+
+.bar .progress-line span::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  right: 0;
+  top: -14px;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-style: #f0f0f0;
+  border-top-color: #07374a;
+}
+
+.bar .progress-line span::after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  color: #f0f0f0;
+  font-size: 12px;
+  font-weight: 700;
+  background: #07374a;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+
+.progress-line .html::after {
+  content: "80%";
+}
+.progress-line .css::after {
+  content: "70%";
+}
+.progress-line .bootstrap::after {
+  content: "82%";
+}
+
+/* ////........Media Query........//// */
+
+@media (max-width: 700px) {
   .skills {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background:#fff;
-    border-radius: 10px;
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-  }
-  
-  .skills-bar {
-    padding: 25px 30px;
-  }
-  
-  .skills-bar .bar {
-    margin: 25px 0;
-  }
-  
-  .skills-bar .bar .info span {
-    font-size: 1rem;
-    font-weight: 500;
-  }
-  
-  .skills-bar .bar .info {
-    margin-bottom: 8px;
-    color: #07374a;
-  }
-  
-  .skills-bar .bar .progress-line {
-    position: relative;
-    height: 10px;
-    width: 350px;
-    background: #f0f0f0;
-    border-radius: 10px;
-    transform: scaleX(0);
-    transform-origin: left;
-    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
-  }
-  
-  .bar .progress-line span {
-    position: absolute;
-    background: #25b79f;
-    height: 100%;
-    border-radius: 10px;
-    transform: scaleX(0);
-    transform-origin: left;
-    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
-  }
-  
-  @keyframes animate {
-    100% {
-      transform: scaleX(1);
-    }
-  }
-  
-  .progress-line .html {
     width: 80%;
   }
-  .progress-line .css {
-    width: 60%;
+
+  .skills-bar .bar .progress-line {
+    width: 100%;
   }
-  .progress-line .bootstrap {
-    width: 50%;
-  }
-  
-  .bar .progress-line span::before {
-    position: absolute;
-    content: "";
-    height: 0;
-    right: 0;
-    top: -14px;
-    width: 0;
-    border: 7px solid transparent;
-    border-bottom-width: 0px;
-    border-right-width: 0px;
-    border-top-style: #f0f0f0;
-    border-top-color: #07374a;
-  }
-  
-  .bar .progress-line span::after {
-    position: absolute;
-    right: 0;
-    top: -28px;
-    color: #f0f0f0;
-    font-size: 12px;
-    font-weight: 700;
-    background: #07374a;
-    padding: 1px 8px;
-    border-radius: 3px;
-  }
-  
-  
-  .progress-line .html::after {
-    content: "80%";
-  }
-  .progress-line .css::after {
-    content: "70%";
-  }
-  .progress-line .bootstrap::after {
-    content: "82%";
-  }
-  
-  
-  /* ////........Media Query........//// */
-  
-  @media (max-width: 700px) {
-      .skills{
-          width: 80%;
-      }
-  
-      .skills-bar .bar .progress-line{
-          width: 100%;
-      }
-  }      
-  /* Testimonial */
-  body {
+}
+/* Testimonial */
+body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.flip-card{
+.flip-card {
   background-color: transparent;
   width: 300px;
   height: 300px;
   perspective: 1000px;
 }
-.flipcards{
+.flipcards {
   border-radius: 35%;
 }
 
@@ -275,7 +268,7 @@ body {
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   text-overflow: clip;
 }
 
@@ -283,7 +276,8 @@ body {
   transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -298,29 +292,29 @@ body {
 }
 
 .flip-card-back {
-  background-color:black;
+  background-color: black;
   color: white;
   transform: rotateY(180deg);
   border-radius: 35%;
 }
-.container{
+.container {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 40px;
   margin-top: 40px;
 }
-.fieldset{
- margin-top: 80px;
+.fieldset {
+  margin-top: 80px;
 }
 
 .display-2 {
-  text-align:justify;
+  text-align: justify;
 }
 
 .img-fluid {
   border-style: unset;
-  border-radius:50% ;
+  border-radius: 50%;
   position: relative;
   border-width: 5px 20px;
   /* padding-bottom: 175px; */
@@ -332,16 +326,15 @@ body {
   margin: auto;
   border-radius: 90%;
   padding: 90px;
-
 }
 /* social links */
-/* Style the Sticky icons on web page */   
-    .stickyicon-list {   
-    /* position: fixed;    */
-    top: 200px;   
-    transform: translateY(-50%);          
-    }         
-    /* .stickyicon-list a {   
+/* Style the Sticky icons on web page */
+.stickyicon-list {
+  /* position: fixed;    */
+  top: 200px;
+  transform: translateY(-50%);
+}
+/* .stickyicon-list a {   
     display: block;   
     text-align: center;   
     padding: 8px;   
@@ -349,45 +342,45 @@ body {
     color: white;   
     font-size: 20px;   
     }          */
-    /* HOver affect on sticky social media icons */   
-    .stickyicon-list a:hover {   
-    color: #000;   
-    width:10px;   
-    }   
-       
-    /* Now we have to design each icon of social media */         
-    .facebook {   
-    /* background: #3b5998;    */
-    color: white;
-    margin: 5px;  
-    }         
-    .github {   
-    color: white;   
-    /* background: #00acee;  */
-    margin: 5px;  
-    }   
-    .linkedin {   
-    /* background: #0e76a8;    */
-    color: white; 
-    margin: 5px; 
-    }       
-    .google {   
-    color: white;   
-    /* background: #db4a39;  */
-    margin: 5px;  
-    }   
-    .instagram {   
-    /* background: white;    */
-    color: white; 
-    margin: 5px;  
-    }         
-    .youtube {   
-    /* color: white;    */
-    background:chocolate; 
-    margin: 5px;   
-    }   
-    /* work experience */
-    body {
+/* HOver affect on sticky social media icons */
+.stickyicon-list a:hover {
+  color: #000;
+  width: 10px;
+}
+
+/* Now we have to design each icon of social media */
+.facebook {
+  /* background: #3b5998;    */
+  color: white;
+  margin: 5px;
+}
+.github {
+  color: white;
+  /* background: #00acee;  */
+  margin: 5px;
+}
+.linkedin {
+  /* background: #0e76a8;    */
+  color: white;
+  margin: 5px;
+}
+.google {
+  color: white;
+  /* background: #db4a39;  */
+  margin: 5px;
+}
+.instagram {
+  /* background: white;    */
+  color: white;
+  margin: 5px;
+}
+.youtube {
+  /* color: white;    */
+  background: chocolate;
+  margin: 5px;
+}
+/* work experience */
+body {
   font-family: "Source Sans Pro", Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.75;
@@ -411,7 +404,8 @@ body {
   overflow: hidden;
   transition: width 0.5s ease;
 }
-.tl-item:before, .tl-item:after {
+.tl-item:before,
+.tl-item:after {
   transform: translate3d(0, 0, 0);
   content: "";
   position: absolute;
@@ -462,7 +456,8 @@ body {
   opacity: 0;
 }
 .tl-content h1 {
-  font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial,
+    sans-serif;
   text-transform: uppercase;
   color: #1779cf;
   font-size: 1.44rem;
@@ -479,9 +474,10 @@ body {
   border-bottom: 1px solid #fff;
 }
 .year p {
-  font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial,
+    sans-serif;
   font-size: 1.728rem;
-  line-height: 0;
+  line-height: 20;
 }
 
 .tl-bg {
