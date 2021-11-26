@@ -2,8 +2,7 @@ body,html{
   height: 100%;
   margin: 0;
   font-family: Arial, Helvetica, serif;
-  /* background-color: #362b2e ; */
-  padding: 71px;
+  background-color: #362b2e ;
 }
 .heading{
   padding: 10vh 120px;
@@ -17,8 +16,15 @@ body,html{
 }
 
 /* hero */
+#hero{
+  background-image: url(pictures/);
+  /* background-color: #a88590; */
+    background-repeat: no-repeat;
+    height: 100%;
+}
 .name {
-  height: 20vh;
+  color: #362b2e;
+  height: 100vh;
   /*This part is important for centering*/
   display: flex;
   align-items: center;
@@ -59,13 +65,18 @@ h1 {
   text-align: center;
   font-family: serif;
 }
-h3 {
+h2 {
   font-style: italic;
   font-size: medium;
+      color: #94737c;
+
+
 }
 p {
   font-style: italic;
   font-size: medium;
+      color: #a88590;
+
 }
 .img-fluid {
   border-radius: 50%;
